@@ -1,8 +1,3 @@
-// import { describe, test, it, expect } from "vitest";
-
-// describe("addNumbers", () => {
-//   it("should return a number that is the sum of two numbers");
-// });
 
 const addNumbers = require("./question-1.js");
 
