@@ -1,4 +1,4 @@
-const largestNumber = require("./question-3.js"); // مسیر فایل خودت را درست بنویس
+const largestNumber = require("./question-3.js");
 
 test("should return the largest number in the array", () => {
   const input = [4, 6, 1, 7, 2, 10, 8, 0, 9];
