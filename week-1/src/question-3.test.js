@@ -1,3 +1,5 @@
+//  a function that reverses a string/list.
+
 import largestNumber from "./question-3.js";
 
 test("should return the largest number in the array", () => {
