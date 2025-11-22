@@ -13,4 +13,4 @@ const reverseList = (list) => {
 let fruits = ["apple", "banana", "mango"];
 console.log(reverseList(fruits));
 
-module.exports = reverseList;
+export default reverseList;

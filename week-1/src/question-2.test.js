@@ -1,4 +1,6 @@
-const reverseList = require("./question-2.js");
+//  a function that reverses a string/list.
+
+import reverseList from "./question-2.js";
 
 test("should return a reversed list as a string", () => {
   const input = ["apple", "banana", "mango"];
