@@ -13,4 +13,4 @@ const largestNumber = (numbers) => {
 
 console.log(largestNumber([4, 6, 1, 7, 2, 10, 8, 0, 9]));
 
-module.exports = largestNumber;
+export default largestNumber;
