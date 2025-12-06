@@ -12,20 +12,15 @@ Authore: Hanifa Tavassoli
 */
 
 const convertSecondsToHours = (seconds) => {
-  let hours = 0;
-  let minutes = 0;
-  let second = 0;
+  const hours = Math.floor(seconds / 3600);
+  const minutes = Math.floor((seconds % 3600) / 60);
+  const second = seconds % 60;
 
-  hours = (seconds / 3600).toFixed();
-  minutes = seconds % 3600;
-  minutes = (minutes / 60).toFixed();
-
-  second = seconds - (hours * 3600 + minutes * 60);
-
-  return [1, 1, 5];
+  return [hours, minutes, second];
 };
+
 const [hours, minutes, seconds] = convertSecondsToHours(3665);
 
-console.log(`${1} hr, ${minutes} min, ${seconds} sec`);
+console.log(`${hours} hr, ${minutes} min, ${seconds} sec`);
 
 export default convertSecondsToHours;
