@@ -16,9 +16,6 @@ Authore: Hanifa Tavassoli
 */
 
 const temperatureConverter = (temp, type) => {
-  //   const celsius = 0;
-  //   const fahrenheit = 0;
-
   let temperature = 0;
 
   if (type === "celsius") temperature = (temp * 9) / 5 + 32;
