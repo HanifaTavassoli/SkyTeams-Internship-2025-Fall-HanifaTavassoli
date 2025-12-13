@@ -18,11 +18,14 @@ const countVowels = (str) => {
   let strg = str.toLowerCase();
 
   for (let i = 0; i < strg.length; i++) {
-    if (strg[i] === "a") count++;
-    else if (strg[i] === "e") count++;
-    else if (strg[i] === "i") count++;
-    else if (strg[i] === "o") count++;
-    else if (strg[i] === "u") count++;
+    if (
+      strg[i] === "a" ||
+      strg[i] === "e" ||
+      strg[i] === "i" ||
+      strg[i] === "o" ||
+      strg[i] === "u"
+    )
+      count++;
   }
 
   return count;
