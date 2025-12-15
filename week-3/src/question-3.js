@@ -10,14 +10,17 @@ Output:
 
 */
 
-const sumDigits = (number) => {
-  if (isNaN(number)) return "the input is not a number";
+const sumDigits = (num) => {
+  if (isNaN(num)) return "the input is not a number";
 
-  let digits = Math.abs(Number(number)).toString();
+  let number = Math.abs(Number(num));
+
   let sum = 0;
 
-  for (let i = 0; i < digits.length; i++) {
-    sum += Number(digits[i]);
+  while (number > 0) {
+    let remainder = number % 10;
+    sum += remainder;
+    number = Math.floor(number / 10);
   }
 
   return sum;
